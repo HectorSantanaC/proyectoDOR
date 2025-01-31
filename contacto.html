@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+  
+</head>
+<body>
+  <header id="header"></header>
+
+  <main class="container-fluid">
+    <section class="container">
+      <h1 class="text-center text-warning-emphasis py-5">Contacto</h1>
+      <div class="row g-4 d-flex align-items-stretch">
+        <!-- Formulario de Contacto -->
+        <div class="col-md-6">
+          <div class="card shadow p-4 rounded-3 h-100">
+            <h2 class="text-center mb-4">Contacta con nosotros</h2>
+            <p>¿Tienes alguna duda o sugerencia? Ponte en contacto con nosotros a través de nuestro formulario de contacto o en nuestras redes sociales.</p>
+            <p class="text-muted">
+              Los campos marcados con <span class="text-danger">*</span> son obligatorios.
+            </p>
+            <form id="formularioContacto" class="needs-validation" novalidate>
+
+              <!-- Nombre -->
+              <div class="mb-3">
+                <label for="nombre" class="form-label">
+                  Nombre <span class="text-danger">*</span>
+                </label>
+                <input type="text" class="form-control" id="nombre" required autocomplete="name">
+                <div class="invalid-feedback">Por favor, introduce tu nombre.</div>
+              </div>
+
+              <!-- Email -->
+              <div class="mb-3">
+                <label for="email" class="form-label">
+                  Correo Electrónico <span class="text-danger">*</span>
+                </label>
+                <input type="email" class="form-control" id="email" required autocomplete="email">
+                <div class="invalid-feedback">Por favor, introduce un email válido.</div>
+              </div>
+
+              <!-- Asunto -->
+              <div class="mb-3">
+                <label for="asunto" class="form-label">Asunto</label>
+                <input type="text" class="form-control" id="asunto" placeholder="Por ejemplo: Consulta sobre productos">
+              </div>
+
+              <!-- Mensaje -->
+              <div class="mb-3">
+                <label for="mensaje" class="form-label">
+                  Mensaje <span class="text-danger">*</span>
+                </label>
+                <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                <div class="invalid-feedback">Por favor, escribe un mensaje.</div>
+              </div>
+
+              <!-- Botón de Enviar -->
+              <button id="botonEnviar" type="submit" class="btn btn-success">Enviar</button>
+            </form>
+
+            <div id="formFeedback" class="alert d-none mt-3" role="alert"></div>
+            </div>
+
+            <script>
+              document.addEventListener("DOMContentLoaded", function () {
+                const form = document.getElementById("formularioContacto");
+                const feedback = document.getElementById("formFeedback");
+            
+                form.addEventListener("submit", function (event) {
+                  if (!form.checkValidity()) {
+                    // Si el formulario no es válido, previene el envío
+                    event.preventDefault();
+                    event.stopPropagation();
+                    feedback.classList.remove("d-none", "alert-success");
+                    feedback.classList.add("alert-danger");
+                    feedback.textContent = "Por favor, completa todos los campos obligatorios.";
+                  } else {
+                    // Si es válido, muestra un mensaje de éxito
+                    event.preventDefault(); // Solo para la demo, puedes quitar esto para permitir el envío
+                    feedback.classList.remove("d-none", "alert-danger");
+                    feedback.classList.add("alert-success");
+                    feedback.textContent = "¡Formulario enviado correctamente!";
+                  }
+                  // Añade clases de validación a los campos
+                  form.classList.add("was-validated");
+                });
+              });
+            </script>
+            
+
+
+        </div>
+  
+        <!-- Ubicación y Mapa -->
+        <div class="col-md-6">
+          <div class="card shadow p-4 rounded-3 h-100">
+            <h2 class="text-center mb-4">Nuestra Ubicación</h2>
+            <div>
+              <p><i class="bi bi-telephone me-2"></i> Teléfono: +34 123 456 789</p>
+              <p><i class="bi bi-envelope me-2"></i> Email: info@eticaverde.com</p>
+              <p class="d-flex">
+                <i class="bi bi-geo-alt me-2"></i>
+                Dirección: Industrial José Sánchez Peñate, s/n, 35001 Las Palmas de Gran Canaria, Las Palmas
+              </p>
+            </div>
+            <div class="ratio ratio-4x3">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3518.6262608339753!2d-15.449318323997032!3d28.12741740683821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc40951c8a18a0f3%3A0x142cb0d09763a325!2sIES%20El%20Rinc%C3%B3n!5e0!3m2!1ses!2ses!4v1737572762041!5m2!1ses!2ses"
+                style="border:0;" 
+                allowfullscreen 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Mapa de nuestra ubicación">
+              </iframe>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer"></footer>
+
+  <script src="./main.js"></script>
+
+  <!-- Boostrap Bundle with Popper -->
+  <script src="./node_modules/@popperjs/core/dist/umd/popper-base.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

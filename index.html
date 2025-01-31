@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+  
+</head>
+<body>
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header id="header"></header>
+    
+    <main class="container">
+      <!-- SLIDER DE IMÁGENES -->
+      <div id="carouselCaptions" class="carousel slide carousel-fade my-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+
+          <!-- Ética Verde -->
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img src="./assets/img/ramillete.jpg" class="d-block w-100 bg-img" alt="ramillete de flores">
+            <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+              <div class="text-center">
+                <img src="./assets/img/Ética_Verde.png" alt="Ética Verde" class="img-fluid">
+                <h1 class="mb-3">Tu tienda de productos veganos</h1>
+                <p class="mb-4">
+                  Descubre nuestra selección de alimentos, cosméticos y accesorios veganos y comprometidos con el medio ambiente
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Alimentación -->
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="./assets/img/food.jpg" class="d-block w-100" alt="vegetales y frutas">
+            <div class="carousel-caption d-none d-md-block custom-caption-right">
+              <h1 class="mb-3">Alimentación</h1>
+              <p class="mb-4">
+                Conoce una selección de alimentos 100% veganos, saludables y llenos de sabor. Ingredientes frescos, orgánicos 
+                y respetuosos con el medio ambiente ¡Come bien, vive mejor!
+              </p>
+              <a href="./productos.html" class="btn btn-success" role="button">Explorar Alimentos</a>
+            </div>
+          </div>
+
+          <!-- Higiene y cuidado personal -->
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="./assets/img/cosmetic.jpg" class="d-block w-100" alt="un producto de cosmética vegana">
+            <div class="carousel-caption d-none d-md-block custom-caption-right">
+              <h1 class="mb-3">Higiene y cuidado personal</h1>
+              <p class="mb-4">
+                Nuestra línea de productos veganos incluye cosméticos y artículos de higiene personal hechos 
+                con ingredientes naturales, sin crueldad animal ni químicos dañinos. La belleza comienza con lo natural
+              </p>
+              <a href="./productos.html" class="btn btn-success" role="button">Cuídate Naturalmente</a>
+            </div>
+          </div>
+
+          <!-- Moda y complementos -->
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="./assets/img/fashion.jpg" class="d-block w-100" alt="una modelo con ropa vegana">
+            <div class="carousel-caption d-none d-md-block custom-caption-left">
+              <h1 class="mb-3">Moda y complementos</h1>
+              <p class="mb-4">
+                Explora nuestra colección de ropa y accesorios 100% veganos, cómodos y sostenibles. Estilo 
+                ético para un futuro más verde
+              </p>
+              <a href="./productos.html" class="btn btn-success" role="button">Descubre el Estilo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Botones de control -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- VIDEO -->
+      <section class="pt-5">
+        <h3 class="text-center text-warning-emphasis">PROTEÍNAS VERDES</h3>
+        <h4 class="text-center mb-5">Descubre los alimentos vegetales que desafían el mito de la carne como la mejor fuente de proteínas</h4>
+        <div>
+          <video class="ratio ratio-16x9" controls>
+            <source src="./assets/video/alimentos-veganos.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta video.
+          </video>
+        </div>
+      </section>
+
+      <!-- NEWSLETTER -->
+      <section id="newsletter" class="pt-5">
+        <h3 class="text-center text-warning-emphasis pt-5">NEWSLETTER</h3>
+        <h4 class="text-center mb-5">Únete a nuestra comunidad vegana y recibe inspiración directa en tu bandeja</h4>
+        <div class="container card p-0">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./assets/img/zumo.jpg " class="rounded-start p-3" alt="zumo de naranja">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">¡Sé parte del cambio!</h5>
+                <p class="card-text">Descubre las mejores ofertas, consejos sostenibles y novedades exclusivas para un estilo de vida vegano y saludable.</p>
+                <form class="row g-3">
+
+                  <!-- Campo de Nombre de Usuario -->
+                  <div class="col-auto d-flex align-items-center">
+                    <div class="input-group">
+                      <span class="input-group-text">
+                        <i class="bi bi-person"></i>
+                      </span>
+                      <input type="text" class="form-control" id="username" placeholder="Nombre de usuario" aria-label="Nombre de usuario">
+                    </div>
+                  </div>
+
+                  <!-- Campo de Email -->
+                  <div class="col-auto d-flex align-items-center">
+                    <div class="input-group">
+                      <span class="input-group-text">
+                        <i class="bi bi-envelope"></i>
+                      </span>
+                      <input type="email" class="form-control" id="email" placeholder="Email" aria-label="Correo electrónico">
+                    </div>
+                  </div>
+                  <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con nadie.</div>
+                  
+                  <!-- Checkbox -->
+                  <div class="d-flex">
+                    <input type="checkbox" class="form-check-input mx-2" id="terminos">
+                    <label for="terminos">Acepto los términos y condiciones. <a href="#">Ver términos de uso</a></label>
+                  </div>
+
+                  <!-- Botón -->
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-success">¡Me apunto!</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>     
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer"></footer>
+
+    <script src="./main.js"></script>
+
+  <!-- Boostrap Bundle with Popper -->
+  <script src="./node_modules/@popperjs/core/dist/umd/popper-base.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

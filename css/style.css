@@ -1,0 +1,156 @@
+/* Bootstrap CSS */
+@import url(../node_modules/bootstrap/dist/css/bootstrap.min.css);
+
+/* Boostrap Icons */
+@import url(../node_modules/bootstrap-icons/font/bootstrap-icons.css);
+
+/* Tipografía Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+  background: #FFFFFF;
+  font-family: 'inter', sans-serif;
+  overflow-x: hidden;
+}
+
+.bg-img {
+  opacity: 0.3;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 50px; /* Ajusta el tamaño */
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  border-radius: 50%; /* Forma circular */
+  background-size: 60%; /* Ajusta el tamaño del icono interno */
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Más oscuro al pasar el mouse */
+}
+
+.carousel-indicators button {
+  background-color: rgba(0, 0, 0, 0.5) !important; /* Cambia a un color oscuro, como negro */
+}
+
+.carousel-indicators button.active {
+  background-color: #f39c12 !important; /* Color más llamativo para el botón activo */
+}
+
+.carousel-inner {
+  height: 0;
+  padding-bottom: 50%;
+}
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+#contenedor-footer {
+  width: 262px;
+}
+
+.carousel-caption {
+  color: black;
+}
+
+.carousel-caption h1,
+.carousel-caption p {
+  margin: 0;
+}
+
+.custom-caption-left {
+  position: absolute; /* Posiciona el texto sobre la imagen */
+  top: 50%; /* Centra verticalmente */
+  left: 30%; /* Ubica el centro del texto en la mitad izquierda */
+  transform: translate(-50%, -50%); /* Centra completamente el texto */
+  text-align: center; /* Centra el contenido dentro del área */
+  width: 40%; /* Limita el ancho del texto */
+}
+
+.custom-caption-right {
+  position: absolute; /* Posiciona el texto sobre la imagen */
+  top: 50%; /* Centra verticalmente */
+  left: 70%; /* Comienza en el centro horizontal */
+  transform: translate(-50%, -50%); /* Ajusta el contenido hacia la mitad derecha */
+  text-align: center; /* Alinea el texto a la izquierda para mejor legibilidad */
+  width: 40%; /* Limita el ancho del texto al 40% de la imagen */
+}
+
+.logo {
+  width: 80px;
+  height: 75px;
+}
+
+#mensaje {
+  resize: none;
+}
+
+#newsletter .card {
+  max-width: 836px;
+}
+
+#newsletter img {
+  object-fit: cover; /* Para recortar la imagen y ocupar todo el espacio */
+  height: 100%; /* Asegura que la imagen llene el contenedor */
+  width: 100%; /* Mantiene el ancho adecuado */
+}
+
+#newsletter .row {
+  height: auto; /* Ajusta según sea necesario */
+}
+
+#titulo-footer {
+  font-weight: bold;
+}
+
+/* Overlay */
+
+.overlay-section {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Ajusta la altura según tus necesidades */
+}
+
+.overlay-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Hace que la imagen cubra todo el contenedor */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.overlay-text {
+  font-size: 2rem; /* Ajusta el tamaño del texto */
+  margin: 10px;
+}

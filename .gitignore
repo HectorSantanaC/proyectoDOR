@@ -1,0 +1,26 @@
+# Ignorar imágenes
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.svg
+*.webp
+
+# Ignorar videos
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.flv
+*.wmv
+*.webm
+
+# Ignorar audios
+*.mp3
+*.wav
+*.ogg
+*.flac
+
+# Ignorar archivos de Photoshop e Illustrator
+*.psd
+*.ai

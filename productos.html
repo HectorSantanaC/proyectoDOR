@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+  
+</head>
+<body>
+  <header id="header"></header>
+
+  <main>
+    <section class="container overlay-section my-5">
+      <div class="overlay-container">
+        <img src="./assets/img/iva-rajovic-h1f27Nt9Cd4-unsplash.jpg" alt="Imagen de fondo" class="background-image">
+        <div class="overlay">
+          <h2 class="overlay-text">Descubre nuestros productos</h2>
+          <p class="overlay-text">Más que productos, un estilo de vida consciente</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section class="pt-5">
+      <h3 class="text-center text-warning-emphasis">PRODUCTOS</h3>
+      <h4 class="text-center">Lo mejor para tu cuidado, sin comprometer al planeta</h4>
+
+      <div class="container my-5">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4">
+          <!-- Alimentación -->
+          <div class="col ps-0">
+            <div id="card" class="card h-100 w-100">
+              <img src="./assets/img/nature-zen-oSJL7gd1aKg-unsplash.jpg" class="card-img-top p-3" alt="un plato de comida vegana">
+              <div class="card-body flex-grow-1">
+                <h5 class="card-title">Alimentación</h5>
+                <p class="card-text">
+                  Conoce una selección de alimentos 100% veganos, saludables y llenos de sabor. Ingredientes frescos, orgánicos 
+                  y respetuosos con el medio ambiente. ¡Come bien, vive mejor!
+                </p>
+              </div>
+              <div class="card-footer bg-transparent border-0 pb-3">
+                <a href="#" class="btn btn-success">Explorar Alimentos</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Higiene y cuidado personal -->
+          <div class="col d-flex justify-content-center">
+            <div id="card" class="card h-100 w-100">
+              <img src="./assets/img/shahed-mufleh-b3Nv99T2164-unsplash.jpg" class="card-img-top p-3" alt="cosmetica vegana">
+              <div class="card-body flex-grow-1">
+                <h5 class="card-title">Higiene y cuidado personal</h5>
+                <p class="card-text">
+                  Nuestra línea de productos veganos incluye cosméticos y artículos de higiene personal hechos 
+                  con ingredientes naturales, sin crueldad animal ni químicos dañinos. La belleza comienza con lo natural.
+                </p>
+              </div>
+              <div class="card-footer bg-transparent border-0 pb-3">
+                <a href="#" class="btn btn-success">Cuídate Naturalmente</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Moda y complementos -->
+          <div class="col pe-0">
+            <div class="card h-100 w-100">
+              <img src="./assets/img/bolso.jpg" class="card-img-top p-3" alt="ropa vegana">
+              <div class="card-body flex-grow-1">
+                <h5 class="card-title">Moda y complementos</h5>
+                <p class="card-text">
+                  Explora nuestra colección de ropa y accesorios 100% veganos, cómodos y sostenibles. Estilo 
+                  ético para un futuro más verde.
+                </p>
+              </div>
+              <div class="card-footer bg-transparent border-0 pb-3">
+                <a href="#" class="btn btn-success">Descubre el Estilo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer"></footer>
+  
+  <script src="./main.js"></script>
+
+  <!-- Boostrap Bundle with Popper -->
+  <script src="./node_modules/@popperjs/core/dist/umd/popper-base.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  
+</body>
+</html>
