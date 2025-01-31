@@ -97,6 +97,13 @@ body {
   resize: none;
 }
 
+.nav-link.active {
+  font-weight: bold;
+  color: #28a745 !important; /* Color verde (Bootstrap) */
+  border-bottom: 2px solid #28a745; /* Subrayado opcional */
+}
+
+
 #newsletter .card {
   max-width: 836px;
 }
@@ -153,4 +160,11 @@ body {
 .overlay-text {
   font-size: 2rem; /* Ajusta el tamaño del texto */
   margin: 10px;
+}
+
+/* PRODUCTOS */
+#card img {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
 }
