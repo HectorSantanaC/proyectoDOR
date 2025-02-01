@@ -7,16 +7,47 @@
 /* Tipografía Inter */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+/* GENERAL */
 body {
   background: #FFFFFF;
   font-family: 'inter', sans-serif;
   overflow-x: hidden;
 }
 
+.logo {
+  width: 80px;
+  height: 75px;
+}
+
+/* NAVBAR */
 .bg-img {
   opacity: 0.3;
 }
 
+.nav-link.active {
+  font-weight: bold;
+  color: #28a745 !important; /* Color verde (Bootstrap) */
+  border-bottom: 2px solid #28a745; /* Subrayado opcional */
+}
+
+@media (max-width: 992px) { /* Aplica solo en móviles */
+  .offcanvas {
+    height: auto !important; /* Ajusta la altura automáticamente al contenido */
+    max-height: none !important; /* Elimina cualquier restricción de altura */
+    min-height: fit-content !important; /* Solo ocupa el espacio del contenido */
+    border-radius: 15px 0 0 15px !important; /* Bordes redondeados en la esquina izquierda */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+
+  /* Asegura que el contenedor del offcanvas no ocupe toda la pantalla */
+  .offcanvas.offcanvas-end {
+    width: fit-content !important; /* Se ajusta al contenido */
+    max-width: 300px; /* Opcional: limita el ancho máximo */
+  }
+}
+
+/* INDEX */
+/* Carrusel */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   width: 50px; /* Ajusta el tamaño */
@@ -57,10 +88,6 @@ body {
   object-fit: cover;
 }
 
-#contenedor-footer {
-  width: 262px;
-}
-
 .carousel-caption {
   color: black;
 }
@@ -88,22 +115,7 @@ body {
   width: 40%; /* Limita el ancho del texto al 40% de la imagen */
 }
 
-.logo {
-  width: 80px;
-  height: 75px;
-}
-
-#mensaje {
-  resize: none;
-}
-
-.nav-link.active {
-  font-weight: bold;
-  color: #28a745 !important; /* Color verde (Bootstrap) */
-  border-bottom: 2px solid #28a745; /* Subrayado opcional */
-}
-
-
+/* Newsletter */
 #newsletter .card {
   max-width: 836px;
 }
@@ -118,11 +130,13 @@ body {
   height: auto; /* Ajusta según sea necesario */
 }
 
-#titulo-footer {
-  font-weight: bold;
-}
-
+/* PRODUCTOS */
 /* Overlay */
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Hace que la imagen cubra todo el contenedor */
+}
 
 .overlay-section {
   position: relative;
@@ -134,12 +148,6 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-}
-
-.background-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Hace que la imagen cubra todo el contenedor */
 }
 
 .overlay {
@@ -157,14 +165,23 @@ body {
   text-align: center;
 }
 
-.overlay-text {
-  font-size: 2rem; /* Ajusta el tamaño del texto */
-  margin: 10px;
-}
-
-/* PRODUCTOS */
+/* Tarjetas productos */
 #card img {
   height: 350px;
   width: 100%;
   object-fit: cover;
+}
+
+/* CONTACTO */
+#mensaje {
+  resize: none;
+}
+
+/* FOOTER */
+#contenedor-footer {
+  width: 262px;
+}
+
+#titulo-footer {
+  font-weight: bold;
 }
