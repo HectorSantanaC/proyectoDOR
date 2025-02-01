@@ -26,24 +26,13 @@ body {
 
 .nav-link.active {
   font-weight: bold;
-  color: #28a745 !important; /* Color verde (Bootstrap) */
-  border-bottom: 2px solid #28a745; /* Subrayado opcional */
+  color: #28a745 !important;
+  border-bottom: 2px solid #28a745;
 }
 
-@media (max-width: 992px) { /* Aplica solo en móviles */
-  .offcanvas {
-    height: auto !important; /* Ajusta la altura automáticamente al contenido */
-    max-height: none !important; /* Elimina cualquier restricción de altura */
-    min-height: fit-content !important; /* Solo ocupa el espacio del contenido */
-    border-radius: 15px 0 0 15px !important; /* Bordes redondeados en la esquina izquierda */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  }
-
-  /* Asegura que el contenedor del offcanvas no ocupe toda la pantalla */
-  .offcanvas.offcanvas-end {
-    width: fit-content !important; /* Se ajusta al contenido */
-    max-width: 300px; /* Opcional: limita el ancho máximo */
-  }
+/* Deshabilitar el enlace en la página actual */
+.disabled-link {
+  pointer-events: none;
 }
 
 /* INDEX */
@@ -53,21 +42,21 @@ body {
   width: 50px; /* Ajusta el tamaño */
   height: 50px;
   background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-  border-radius: 50%; /* Forma circular */
-  background-size: 60%; /* Ajusta el tamaño del icono interno */
+  border-radius: 50%;
+  background-size: 60%;
 }
 
 .carousel-control-prev-icon:hover,
 .carousel-control-next-icon:hover {
-  background-color: rgba(0, 0, 0, 0.8); /* Más oscuro al pasar el mouse */
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .carousel-indicators button {
-  background-color: rgba(0, 0, 0, 0.5) !important; /* Cambia a un color oscuro, como negro */
+  background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
 .carousel-indicators button.active {
-  background-color: #f39c12 !important; /* Color más llamativo para el botón activo */
+  background-color: #f39c12 !important;
 }
 
 .carousel-inner {
@@ -98,21 +87,21 @@ body {
 }
 
 .custom-caption-left {
-  position: absolute; /* Posiciona el texto sobre la imagen */
-  top: 50%; /* Centra verticalmente */
-  left: 30%; /* Ubica el centro del texto en la mitad izquierda */
-  transform: translate(-50%, -50%); /* Centra completamente el texto */
-  text-align: center; /* Centra el contenido dentro del área */
-  width: 40%; /* Limita el ancho del texto */
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 40%;
 }
 
 .custom-caption-right {
-  position: absolute; /* Posiciona el texto sobre la imagen */
-  top: 50%; /* Centra verticalmente */
-  left: 70%; /* Comienza en el centro horizontal */
-  transform: translate(-50%, -50%); /* Ajusta el contenido hacia la mitad derecha */
-  text-align: center; /* Alinea el texto a la izquierda para mejor legibilidad */
-  width: 40%; /* Limita el ancho del texto al 40% de la imagen */
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 40%;
 }
 
 /* Newsletter */
@@ -121,13 +110,13 @@ body {
 }
 
 #newsletter img {
-  object-fit: cover; /* Para recortar la imagen y ocupar todo el espacio */
-  height: 100%; /* Asegura que la imagen llene el contenedor */
-  width: 100%; /* Mantiene el ancho adecuado */
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 #newsletter .row {
-  height: auto; /* Ajusta según sea necesario */
+  height: auto;
 }
 
 /* PRODUCTOS */
@@ -135,13 +124,13 @@ body {
 .background-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Hace que la imagen cubra todo el contenedor */
+  object-fit: cover;
 }
 
 .overlay-section {
   position: relative;
   width: 100%;
-  height: 400px; /* Ajusta la altura según tus necesidades */
+  height: 400px;
 }
 
 .overlay-container {
@@ -165,8 +154,8 @@ body {
   text-align: center;
 }
 
-/* Tarjetas productos */
-#card img {
+/* Tarjetas de productos */
+.card-producto img {
   height: 350px;
   width: 100%;
   object-fit: cover;
@@ -184,4 +173,23 @@ body {
 
 #titulo-footer {
   font-weight: bold;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+
+  /* NAVBAR */
+  .offcanvas {
+    height: auto !important; /* Ajusta la altura automáticamente al contenido */
+    max-height: none !important; /* Elimina cualquier restricción de altura */
+    min-height: fit-content !important; /* Solo ocupa el espacio del contenido */
+    border-radius: 15px 0 0 15px !important; /* Bordes redondeados en la esquina izquierda */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+
+  /* Asegura que el contenedor del offcanvas no ocupe toda la pantalla */
+  .offcanvas.offcanvas-end {
+    width: fit-content !important; /* Se ajusta al contenido */
+    max-width: 300px; /* Opcional: limita el ancho máximo */
+  }
 }
