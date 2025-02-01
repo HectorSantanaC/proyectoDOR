@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Héctor Santana Camacho">
   <title>Inicio</title>
 
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/png" href="./assets/icons/favicon-96x96.png" sizes="32x32">
   
 </head>
 <body>
@@ -25,8 +27,8 @@
 
           <!-- Ética Verde -->
           <div class="carousel-item active" data-bs-interval="5000">
-            <img src="./assets/img/ramillete.jpg" class="d-block w-100 bg-img" alt="ramillete de flores">
-            <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+            <img src="./assets/img/ramillete.jpg" class="d-block w-100 bg-img" alt="Un ramillete de flores">
+            <div class="carousel-caption d-flex justify-content-center align-items-center h-100" aria-live="polite">
               <div class="text-center">
                 <img src="./assets/img/Ética_Verde.png" alt="Ética Verde" class="img-fluid">
                 <h1 class="mb-3">Tu tienda de productos veganos</h1>
@@ -39,8 +41,8 @@
 
           <!-- Alimentación -->
           <div class="carousel-item" data-bs-interval="5000">
-            <img src="./assets/img/food.jpg" class="d-block w-100" alt="vegetales y frutas">
-            <div class="carousel-caption d-none d-md-block custom-caption-right">
+            <img src="./assets/img/food.jpg" class="d-block w-100" alt="Vegetales y frutas">
+            <div class="carousel-caption d-none d-md-block custom-caption-right" aria-live="polite">
               <h1 class="mb-3">Alimentación</h1>
               <p class="mb-4">
                 Conoce una selección de alimentos 100% veganos, saludables y llenos de sabor. Ingredientes frescos, orgánicos 
@@ -52,8 +54,8 @@
 
           <!-- Higiene y cuidado personal -->
           <div class="carousel-item" data-bs-interval="5000">
-            <img src="./assets/img/cosmetic.jpg" class="d-block w-100" alt="un producto de cosmética vegana">
-            <div class="carousel-caption d-none d-md-block custom-caption-right">
+            <img src="./assets/img/cosmetic.jpg" class="d-block w-100" alt="Un producto de cosmética vegana">
+            <div class="carousel-caption d-none d-md-block custom-caption-right" aria-live="polite">
               <h1 class="mb-3">Higiene y cuidado personal</h1>
               <p class="mb-4">
                 Nuestra línea de productos veganos incluye cosméticos y artículos de higiene personal hechos 
@@ -65,8 +67,8 @@
 
           <!-- Moda y complementos -->
           <div class="carousel-item" data-bs-interval="5000">
-            <img src="./assets/img/fashion.jpg" class="d-block w-100" alt="una modelo con ropa vegana">
-            <div class="carousel-caption d-none d-md-block custom-caption-left">
+            <img src="./assets/img/fashion.jpg" class="d-block w-100" alt="Una modelo con ropa vegana">
+            <div class="carousel-caption d-none d-md-block custom-caption-left" aria-live="polite">
               <h1 class="mb-3">Moda y complementos</h1>
               <p class="mb-4">
                 Explora nuestra colección de ropa y accesorios 100% veganos, cómodos y sostenibles. Estilo 
@@ -80,11 +82,11 @@
         <!-- Botones de control -->
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          <span class="visually-hidden">Anterior</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+          <span class="visually-hidden">Siguiente</span>
         </button>
       </div>
 
@@ -131,10 +133,10 @@
                       <span class="input-group-text">
                         <i class="bi bi-envelope"></i>
                       </span>
-                      <input type="email" class="form-control" id="email" placeholder="Email" aria-label="Correo electrónico">
+                      <input type="email" class="form-control" id="email" placeholder="Email" aria-label="Correo electrónico" aria-describedby="email">
                     </div>
                   </div>
-                  <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con nadie.</div>
+                  <div class="form-text">Nunca compartiremos tu correo electrónico con nadie.</div>
                   
                   <!-- Checkbox -->
                   <div class="d-flex">

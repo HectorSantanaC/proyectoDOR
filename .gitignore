@@ -1,3 +1,6 @@
+# Ignorar todo dentro de assets
+/assets/*
+
 # Ignorar imágenes
 *.jpg
 *.jpeg

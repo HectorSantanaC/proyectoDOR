@@ -24,15 +24,15 @@ body {
   opacity: 0.3;
 }
 
+/* Deshabilitar el enlace en la página actual */
+.disabled-link {
+  pointer-events: none;
+}
+
 .nav-link.active {
   font-weight: bold;
   color: #28a745 !important;
   border-bottom: 2px solid #28a745;
-}
-
-/* Deshabilitar el enlace en la página actual */
-.disabled-link {
-  pointer-events: none;
 }
 
 /* INDEX */
@@ -155,15 +155,31 @@ body {
 }
 
 /* Tarjetas de productos */
-.card-producto img {
+.card-producto {
+  overflow: hidden;
+}
+
+.card-img-top {
   height: 350px;
   width: 100%;
   object-fit: cover;
+  transition: transform 0.3s;
+  border-radius: 20px;
+}
+
+.card-img-top:hover {
+  transform: scale(1.1);
 }
 
 /* CONTACTO */
 #mensaje {
   resize: none;
+}
+
+.map-text {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 8px;
 }
 
 /* FOOTER */
